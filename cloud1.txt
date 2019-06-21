@@ -1,0 +1,868 @@
+
+
+Cloud:
+-  everything is service....hosting services, ( hardware, operation system, applicatons...)
+
+* stack Open, azure stack, vcloud
+
+
+Four most imporant characterstic of clould:
+service
+elastic
+unlimited
+HA
+
+everthing is service
+ondemand scalable - elastic
+unlimited computation - 
+storage 
+High availibility
+----------\
+
+Scalability - 
+sacle up - vertical
+scale out - horizantal - via load balancer
+* the generic scalibily is 
+------------------
+
+Elasticity - other name -> autoScale
+- always in scale out 
+
+
+
+Capex - 
+Opex - 
+---
+---------------------------
+
+classification in clould
+1) based on deployment
+2) bases services provide/ model
+
+
+
+	2) bases services provide
+		1) IAAS
+		2) PAAS
+		3) SAAS
+
+Framework for provide PAAS:
+CF - clound foundary - uses cloud based services to provide paas
+
+Open shift
+Service fabric - by microsoft - azure
+
+PAAS for microservices
+	
+* Monolothic -> SOA - > Microservice 
+* in PAAS - In memory VM ... called container based
+* Opt for go for readily avaiable paas or you can customized it i.e devops like create CF, service fabric etc
+*
+	best example -  Elastic beanstack
+			Elastic beanstack with docker runtime ..... 		
+			EC containers.....custom container by aws like docker
+
+- microservice with service fabric
+- we can see power of clould in PAAS ....
+
+To develop a microservice - 12 factor apps should be required
+
+* IBM blumix pure PAAS
+* Cloud Foundary is pure PAAS
+* 
+* PAAS most popular service model
+
+SAAS
+	examople 	-google aps
+			-o365
+			-one drive
+			
+			
+	2)based on deployment
+		
+		public -
+		private - 
+		Hybrid -  is most popular deployment model
+
+
+
+- IAM
+ ( NTLM and karbos)
+ - Token - Access key + Secrect Access key
+
+user2
+pass:admin123
+
+amanzon r
+arn:aws:iam::194296520404:user/user1
+arn:aws:iam::194296520404:user/user2
+
+
+account id : 194296520404 - account id for your subscription
+user login screen:
+194296520404.signin.aws.amazon.com/console 
+
+
+Access Key ID:
+AKIAJ64UIOKQAPU4D73Q
+Secret Access Key:
+F7ZZk7rstyqRdW7UkoAdDcx9znG+g3c/GO6wnmlm
+
+*********************************
+1. AWS User cases
+ Backup - Archive
+- Storage
+Storage 
+1) EBS elastic block storage (SAN) - S
+2) EFS  elastic file system (NFS) - Newtwork 
+3) S3 simple stoorage service ( Block
+  - Standard storage
+	infrequent acces
+	glaciar 
+	reduced redeundencyy
+
+2. Appliaiton hosting
+
+3. Media sharing ( Image/Video)
+	- CDN - content delivery network 
+4. Media distrubution
+
+5. Academic computing
+6. Search Engines
+ - Lusen, wrapper - solar
+analystics - zomatao, facebook like etc
+8. Social Networking
+9. Scalable applications
+10. Saas / PasS Hosting 
+
+Region and Zones:
+
+Region -> zones - > data center -> egges
+Every data center, have their own zone:Region contains the zones and multiple data center.
+
+*******************************
+Amzaon colud characteristics:
+
+ -Availabily and Reliablity
+ -Scalabilty and Elasticity
+ -Performance
+ -Flexible ( Numberous options of programming, 
+ -Secure
+
+******************
+EC2-
+Every VM is called ec2 instance or once instance of ec2 is a ec2
+
+collection of rules is called security group  on ec2 ( RDP, R1, R2m SSH........set of firewalls )
+
+firewall rules -- on public ips
+
+EC2 creates server instance
+multiple server inside instance are connected via private IP
+
+
+AMI - amazon machine image 
+
+spot instance - from bid ( for 1 or 2 or some month)
+
+EC2 is elastic
+- 
+
+Features highlights
+- Elastic
+Flexible
+secure
+Cheapeer
+Ready to uyse AMI
+Reliable
+
+
+*****************
+Day2
+
+EC2 - by default root file syste is EBS
+
+EBS (SAN)  
+C:, D:
+
+EFS (IP ; f1)
+\\IP\f1
+
+
+
+- collection of firewall group is called security group
+- windows - rdp - Administrator - dynamically generate passs
+linux - ssh (putty) - ec-user - dynamically generate passs
+
+
+cytrography:
+--symetric - secrect/shared key - DES/3DES/AES 
+--asymetric - public key - RSA - (to use in network), use as key/pair - public and private key
+- hybrid (symetric + asymetric- session key enc - DES with RSA
+- hash - one way - (MD4, MD5, SHA)
+
+Two operations
+- encrypt - -> key and algo
+- dec -- >
+
+EC2 use Assymetric (ASyn)
+
+- Dedicated puublic EIP - elastic IP, it used remap with new ec2 instance
+
+Administrator
+j7GCWa.9Hm$
+
+
+
+*****************************************
+Azure
+vm2santosh
+vmadmin
+admin@123456
+
+-----------------------*********************************
+
+ELB - Elastic Load blancer
+
+ELB <-> AutoScaling <-> ColudWatch
+
+
+
+Auto Scaling -> it;s a group of auto scalre rule
+
+
+-Disrubute incoming traffic
+- Health check of instance
+- spans across AZs
+- FaultTolerance - ( inbuilt, always in ELB)
+
+ELB feautes
+- distribute traffice in multipze AZ
+- HTTPS, HTTPS, TCP, & ssl PROTOCOLS
+- STICKY sESSION - inmemory sessions
+- aUTOSCALING can add instance on the fly
+Monitoring with clouldwatch
+heath check
+loggine security
+
+- default alogrithm - Round Robin
+
+type of ELBs
+- Class
+
+34.211.18.96
+bH)E=*VbtL
+
+=(SHr*bnXUb
+
+
+***********************---
+
+VPC - Virtual Private Cloud
+
+- public and privae subnets, your own IP address range within in sbunet , simple to use, hybrid clould, no colst, added security measures
+
+why VPC: improved secuietym control of netweork and IPm secuierty group and acl, fixed IP, 
+
+
+
+
+subnet - collection of ip address
+
+ipv4:
+ip address : 32 bit adress ( binary bits)
+
+divided in 4 groups ( each grop 8 bit - called octct )
+- subnet - netwrok in main network (convert a house into apartment)
+
+
+****************
+
+Day3
+VPC
+
+any port below 1024 is inside system, 
+port 80 only receive, stateless
+
+http:/ it's firewall friendly protocol, it's only one protocol ..... 
+sql - server have 1433, 
+
+physical -> newtwork()-> transport(tcp/udp)  -> application (snmop, htttp, ftp, smtp)
+
+
+
+port is service end point, identification of service
+combition of IP and Port is socket
+
+IP represent system and Port represet service
+Ha&F6nX9$K
+
+10.0.2.99 - private
+M$y5B5rQ8(@
+
+
+
+
+
+arn:aws:s3:::sample1santosh/*
+
+**********
+
+S3:
+bucket + key + version
+S3 -> 
+	RR (Reduced redundancy)
+	IA ( Intrinsic redudancy)
+	Glacier (Archieve)
+-Policies vs ACL
+
+
+********************************
+
+RDS: ( it's PAAS)
+
+RDS feaures"
+maanged db
+select your won sile
+
+
+RDS features
+- Event management,
+pre-confged paramets
+
+
+
+
+dbaddmin
+admin123
+db2santoshrds.c4s2zgocr9zu.us-west-2.rds.amazonaws.com:1433 
+
+- DynoDB - key and value pair
+		support rest, console API
+		no client connection like sql , oracle ( no odbc, jdbc etc), no runtime engine
+		use or connect via API
+		No ACID
+
+Table - is collection of data
+Item - group of identities
+Attribute 
+  it's a SAAS
+
+***********************************
+
+EBS - its PAAS
+Quick 
+sime and easy
+supports multiple stacks
+version management
+reliable
+scalable
+
+two env - > 
+	-web env (http endpoints)
+	-worker env (asyn background long running process) ( not http points)
+
+
+
+
+
+
+Cloud Watch:
+-simple monotoring tool
+-monitor the resources 
+
+functionality: ec2 basic monitoring free, get you data at every 5 minutes, send notifications/ alerts to autoscaling to help scale up and scale down
+
+
+SNMP = simple network managment protocol
+ 
+basic monitoring - every 5 mi nues
+detailed monitoring every 1 minutes
+
+Metrics - defined by - name, namespace, ore ore more dimentions, (Optionally) a unit of meauese
+
+analytical report is a collection of aggregation
+
+statistics are metric data aggregation over specified peroids of teme
+
+
+- any cooud doesn't store log data....
+i-091ce15c97496ad67 
+
+- in any cloud watch, 
+
+****************
+
+Cloudfront is CDN
+Lamda :
+
+API - reset end points exposes to api gateway
+
+
+
+
+-------------
+Cloud formation : template stack
+
+vpc
+auto scaling
+route53
+elb
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*************
